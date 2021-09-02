@@ -18,16 +18,10 @@ var emojiDictionary = {
   "😎": "Smiling face with sunglasses",
   "😘": "Kiss blowing face",
   "🥰": "Smiling face with hearts",
-  "😗": "Kissing face",
-  "😙": "Kissing face with smiling eyes",
-  "😚": "Kissing face with closed eyes",
   "🙂": "Slightly smiling face",
   "🤗": "Hugging face",
-  "🤥": "Lying face",
   "🤫": "Shushing face",
-  "🤭": "Face with hand over mouth",
-  "🧐": "Face with monacle",
-  "🤓": "Nerd face"
+  "🤭": "Face with hand over mouth"
 };
 
 var emojisWeKnow = Object.keys(emojiDictionary);
@@ -59,7 +53,7 @@ export default function App() {
       </p>
       <input onChange={emojiInputHandler}></input>
 
-      <h2> meaning: {meaning} </h2>
+      <h2> {meaning} </h2>
 
       <h3> Emojis we know </h3>
       {emojisWeKnow.map(function (emoji) {
